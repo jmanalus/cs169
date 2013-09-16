@@ -19,7 +19,9 @@ end
 
 
 def sum_to_n?(ints, n)
-    if ints.empty?
+    if ints.empty? && n > 0 
+      return false
+    elsif ints.empty?
       return 0
     else
       x = 0;
@@ -36,3 +38,5 @@ def sum_to_n?(ints, n)
       return false
   end
 end
+
+
